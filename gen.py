@@ -18,8 +18,8 @@ template_html = """
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>JerryZhang</title>
     <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" href="https://p-1252349778.cos.ap-chengdu.myqcloud.com/favicon.ico">
     <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+    <link rel="icon" href="./assets/favicon.ico">
   </head>
   <body>
     <div class="container">
@@ -49,6 +49,8 @@ def copy_files():
     shutil.copy2(os.path.join(root, 'index.html'), dist)
     # avatar
     shutil.copy2(os.path.join(root, 'assets/avatar.png'), dist + '/assets')
+    # favicon
+    shutil.copy2(os.path.join(root, 'assets/favicon.ico'), dist + '/assets')
     # lessc style.less style.css
     lessc = shutil.which('lessc')
     cmd = '{0} {1} {2}'.format(
