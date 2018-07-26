@@ -16,12 +16,16 @@ template_html = """
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kumu</title>
+    <title>JerryZhang</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="https://p-1252349778.cos.ap-chengdu.myqcloud.com/favicon.ico">
     <link rel="stylesheet" type="text/css" href="./assets/style.css" />
   </head>
   <body>
-    <div class="container-fluid">
-    ${content}
+    <div class="container">
+      <div class="markdown-content">
+        ${content}
+      </div>
     </div>
   </body>
 </html>

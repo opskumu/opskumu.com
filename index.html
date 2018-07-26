@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Kumu</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/style.css" />
   </head>
   <body>
@@ -14,28 +15,31 @@
           东隅已逝，桑榆非晚
         </div>
       </div>
-      <div class="menu">
-        <ul>
-          <li><a href="#">主页</a></li>
-          <li><a href="http://blog.opskumu.com/">博客</a></li>
-          <li><a href="http://wiki.opskumu.com/">Wiki</a></li>
-          <li><a href="https://github.com/opskumu">Github</a></li>
-        </ul>
-      </div>
+
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link" href="#">主页</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://blog.opskumu.com/">博客</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://wiki.opskumu.com/">Wiki</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://github.com/opskumu">Github</a></li>
+      </ul>
+
       <div class="content">
-        <div class="intro">
-          <ul>
-            <li>居住城市：杭州</li>
-            <li>个人邮箱：<a href="mailto:opskumu@gmail.com">Kumu's Gmail</a></li>
-            <li>社交网络：<a href="https://weibo.com/whynoyes">微博</a> | <a href="https://www.douban.com/people/sanotes">豆瓣</a> | <a href="https://twitter.com/opskumu">Twitter</a></li>
-            <li>当前岗位：PaaS 平台研发</li>
-            <li>涉及技术：Kubernetes、Docker、Go、Linux
-            <li>职业经历：平台研发、游戏运维、安全运维</li>
-          </ul>
+        <div class="row">
+          <div class="col-8">
+            <ul class="list-unstyled">
+              <li>居住城市：杭州</li>
+              <li>个人邮箱：<a href="mailto:opskumu@gmail.com">Kumu's Gmail</a></li>
+              <li>社交网络：<a href="https://weibo.com/whynoyes">微博</a> | <a href="https://www.douban.com/people/sanotes">豆瓣</a> | <a href="https://twitter.com/opskumu">Twitter</a></li>
+              <li>当前岗位：PaaS 平台研发</li>
+              <li>涉及技术：Kubernetes、Docker、Go、Linux
+              <li>职业经历：平台研发、游戏运维、安全运维</li>
+            </ul>
         </div>
-        <div class="avatar">
+
+        <div class="col-4">
           <img alt="avatar" src="assets/avatar.png"/>
         </div>
+
       </div>
       <div class="footer">
         Copyright &copy; 2018 Kumu
